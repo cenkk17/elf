@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <title>Kahve İçelim mi?</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      background-color: #fff9f0;
+      margin: 0;
+      padding: 0;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    h1 {
+      font-size: 30px;
+      color: #333;
+      margin-bottom: 40px;
+    }
+
+    #yesBtn {
+      padding: 14px 28px;
+      font-size: 18px;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+
+    #response {
+      margin-top: 40px;
+      font-size: 22px;
+      color: #5a3727;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Bu akşam kahve içiyor muyuz?</h1>
+
+  <button id="yesBtn">Evet</button>
+
+  <div id="response"></div>
+
+  <script>
+    const yesBtn = document.getElementById("yesBtn");
+    const response = document.getElementById("response");
+
+    yesBtn.addEventListener("click", () => {
+      response.textContent = "O zaman kahveler senden!";
+    });
+  </script>
+
+</body>
+</html>
